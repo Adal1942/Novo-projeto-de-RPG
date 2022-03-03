@@ -1,0 +1,459 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+}
+body
+{
+    background: #928DAB;
+    color: #222;
+    font-family: 'Syne Mono', monospace;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title
+{
+    flex-direction: column;
+    line-height: 10px;
+}
+.infinito
+{
+    width: 100px;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list
+{
+    display: flex;
+    gap: 6px;
+}
+.list .user
+{
+  position: relative;
+  background: #fff;
+  height: 60px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.list .user .imgBx
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.list .user .imgBx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.list .user .details
+{
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;   
+}
+.list .user .details h3
+{
+    font-weight: 600;
+    line-height: 1.1em;
+}
+.list .user .details p
+{
+    font-weight: 500;
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.6);
+}
+.navigation
+{
+    position: relative;
+    width: 40px;
+    height: 60px;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navigation.active
+{
+    width: 200px;
+}
+.navigation .icones
+{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #222;
+    border-radius: 50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #928DAB;
+}
+.navigation .icones:nth-child(1)
+{
+    transform: translateY(-12px);
+}
+.navigation .icones:nth-child(3)
+{
+    transform: translateY(12px);
+}
+.navigation.active .icones
+{
+    width: 45px;
+    height: 45px;
+    transition: 0.5s;
+}
+/*.navigation.active .icones:nth-child(1),
+.navigation.active .icones:nth-child(3)
+{
+    transform: translateY(0);
+}*/
+.navigation.active .icones:nth-child(1)
+{
+    transform: translateY(0) translateX(-60px);
+}
+.navigation.active .icones:nth-child(3)
+{
+    transform: translateY(0) translateX(60px);
+}
+.navigation .icones i
+{
+    transition: 0.5s;
+    font-size: 0em;
+}
+.navigation.active .icones i
+{
+    font-size: 1.25em;
+    color: #928DAB;
+}
+.navigation.active .icones:hover 
+{
+    background: #191654;
+}
+.navigation.active .icones:hover i
+{
+    color: #fff;
+}
+article
+{
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.card
+{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 200px 70px;
+    grid-template-areas: "image" "text" "stats";
+    margin: 10px 20px;
+    
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.card-image
+{
+    grid-area: image;
+    background: url('/components/images/flecha.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text
+{
+    grid-area: text;
+    margin: 25px;
+}
+.card-text .date
+{
+    color: #EA2027;
+    font-size: 13px;
+}
+.card-text p
+{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.card-text a
+{
+    display: inline-block;
+    color: grey;
+    background: transparent;
+    font-size: 0.7em;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.card-text h2
+{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card-stats
+{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #3741fab2;
+}
+.card-stats .stat
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+.card-stats .type
+{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-stats .value
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-stats .border
+{
+    border-left: 1px solid #EA2027;
+    border-right: 1px solid #EA2027;
+}
+.card:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card2
+{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 200px 70px;
+    grid-template-areas: "image" "text" "stats";
+    margin: 10px 20px;
+    
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.card-image2
+{
+    grid-area: image;
+    background: url('/components/images/cetro.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text2
+{
+    grid-area: text;
+    margin: 25px;
+}
+.card-text2 .date2
+{
+    color: #8854d0;
+    font-size: 13px;
+}
+.card-text2 p
+{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.card-text2 a
+{
+    display: inline-block;
+    color: grey;
+    background: transparent;
+    font-size: 0.7em;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.card-text2 h2
+{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card-stats2
+{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #a55eea;
+}
+.card-stats2 .stat
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+.card-stats2 .type
+{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-stats2 .value
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-stats2 .border2
+{
+    border-left: 1px solid #8854d0;
+    border-right: 1px solid #8854d0;
+}
+.card2:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card3
+{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 200px 200px 70px;
+    grid-template-areas: "image" "text" "stats";
+    margin: 10px 20px;
+    
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.card-image3
+{
+    grid-area: image;
+    background: url('/components/images/espada.jpg');
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+.card-text3
+{
+    grid-area: text;
+    margin: 25px;
+}
+.card-text3 .date3
+{
+    color: #1B1464;
+    font-size: 13px;
+}
+.card-text3 p
+{
+    color: gray;
+    font-size: 13px;
+    font-weight: 300;
+}
+.card-text3 a
+{
+    display: inline-block;
+    color: grey;
+    background: transparent;
+    font-size: 0.7em;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.card-text3 h2
+{
+    margin-top: 0px;
+    font-size: 28px;
+}
+.card-stats3
+{
+    grid-area: stats;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #a4b0be;
+}
+.card-stats3 .stat
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #fff;
+}
+.card-stats3 .type
+{
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-stats3 .value
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.card-stats3 .border3
+{
+    border-left: 1px solid #1B1464;
+    border-right: 1px solid #1B1464;
+}
+.card3:hover
+{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
