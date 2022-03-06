@@ -185,7 +185,6 @@ article
     box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.3s ease;
-    cursor: pointer;
 }
 .card-image
 {
@@ -221,6 +220,7 @@ article
     border-radius: 20px;
     font-weight: 300;
     text-decoration: none;
+    cursor: pointer;
 }
 .card-text h2
 {
@@ -280,7 +280,6 @@ article
     box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.3s ease;
-    cursor: pointer;
 }
 .card-image2
 {
@@ -316,6 +315,7 @@ article
     border-radius: 20px;
     font-weight: 300;
     text-decoration: none;
+    cursor: pointer;
 }
 .card-text2 h2
 {
@@ -375,7 +375,6 @@ article
     box-shadow: 5px 5px 15 rgba(0,0,0,0.9);
     text-align: center;
     transition: 0.3s ease;
-    cursor: pointer;
 }
 .card-image3
 {
@@ -411,6 +410,7 @@ article
     border-radius: 20px;
     font-weight: 300;
     text-decoration: none;
+    cursor: pointer;
 }
 .card-text3 h2
 {

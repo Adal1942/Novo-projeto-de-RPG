@@ -1,0 +1,177 @@
+*
+body
+{
+    background: #928DAB;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title
+{
+    flex-direction: column;
+    line-height: 10px;
+}
+.infinito
+{
+    width: 100px;
+}
+li
+{
+    display: inline-block;
+    margin: 20px;
+}
+a
+{
+    color: #fff;
+}
+a:hover
+{
+    color: #191654;
+    transition: 0.3s all;
+}
+#inscreva-se-btn
+{
+    border: 2px dashed #191654;
+    padding: 10px;
+    border-radius: 15px;
+}
+#inscreva-se-btn:hover
+{
+    background: #191654;
+    color: #fff;
+}
+main
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+}
+section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+.box
+{
+    position: relative;
+    padding: 40px;
+    width: 310px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.2);
+    margin-right: 100px;
+}
+.box::after
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border-radius: 15px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.3) 0%,
+    rgba(255,255,255,0.1) 15%, transparent 50%, transparent 85%, rgba(255,255,255,0.3) 100%);
+}
+.box .form
+{
+    position: relative;
+    width: 100%;
+}
+.box .form h2
+{
+    color: #191654;
+    font-weight: 600;
+    font-size: 45px;
+    letter-spacing: 2px;
+    margin-bottom: 70px;
+    margin-left: 90px;
+}
+.box .form .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box .form .inputBox input
+{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    padding: 8px 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    box-shadow: inset 0 0 25px rgba(255,255,255,0.2);
+}
+.box .form .inputBox input::placeholder
+{
+    color: #fff;
+}
+.box .form .inputBox input[type="submit"]
+{
+    background: #191654;
+    color: #fff;
+    max-width: 100px;
+    padding:  8px 10px;
+    box-shadow: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.box .form .inputBox .icon
+{
+    position: absolute;
+    top: 12px;
+    left: -25px;
+    transform: scale(1.3);
+    filter: invert(1);
+}
+.remeber
+{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.box .form p
+{
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 5px;
+}
+.box .form .esqueceu
+{
+    color: #fff;
+    text-decoration: none;
+}
+.larapio
+{
+    margin-top: 70px;
+    width: 400px;
+    margin-right: 150px;
+}
