@@ -163,3 +163,76 @@ section
 {
     color: #fff;
 }
+main
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.base
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 80vh;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#0004);
+}
+.container .box
+{
+    position: relative;
+    width: 390px;
+    height: 470px;
+    background: #004e92;
+    margin: 0 20px;
+    border-radius: 20px;
+    background: transparent;
+    background-size: 70px 70px;
+    filter: grayscale(1);
+    animation: animateBg 0.5s linear infinite;
+    animation-play-state: paused;
+    transition: filter 1s;
+    display: flex;
+    justify-content: center;
+}
+.container .box:nth-child(2)
+{
+    background: transparent;
+    background-size: 70px 70px;  
+}
+.container .box:hover
+{
+    animation-play-state: running;
+    filter: grayscale(0);
+}
+@keyframes animateBg
+{
+    0%
+    {
+        background-position: 0;
+    }
+    100%
+    {
+        background-position: 70px;
+    }
+}
+.container .box .teste .card
+{
+    position: center;
+    bottom: 0;
+    height: 90%;
+    transition: height 0.5s;
+}
+.container .box:hover .teste .card
+{
+    height: 480px;
+}
+.teste
+{
+    text-decoration: none;
+    color: #fff;
+}

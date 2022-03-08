@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-classes.css">
+    <title>Classes</title>
+    <script src="https://kit.fontawesome.com/fd1e79e837.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+        </style>
+</head>
+<body>
+    <header> 
+        <div id="title">
+            <a href="/screens/2 - inicio.html"><img class="infinito" src="/components/images/logo.png" alt="pngwing"></a>
+        </div>
+        <section>
+            <div class="list">
+             <div class="user">
+                <div class="imgBx">
+                    <img class="eu" src="/components/images/eu.jpg" alt="euzinho">
+                </div>   
+                <div class="details">
+                    <h3>Adal1942</h3>
+                    <p>Novato</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+                <span><i class="fa-solid fa-user-plus"></i></span>
+                <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+            </div>
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            navigation.onclick = function(){
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </section>
+    </header>
+    <main>
+        <section class="classes">
+        <div class="card">
+            <div class="card-image"></div>
+            <div class="card-text">
+                <h2>Arqueiro</h2>
+                <br>
+                <p>Arqueiros podem ser considerados classe de apoio, assim como classe de combate a curta distância. Claro que suas habilidades sempre serão melhores com obstáculos de média ou longa distância.</p>
+                <br>
+                <a href="/screens/14 - seleção arqueiros.html"><p>Escolher este</p></a>
+            </div>
+        </div>
+        <div class="card2">
+            <div class="card-image2"></div>
+            <div class="card-text2">
+                <h2>Mago</h2>
+                <br>
+                <p>O mago é um conjurador de magias que usa a Inteligência como atributo base e este deve ser o atributo mais alto da classe, pois isso vai influenciar o número de magias disponíveis para o personagem.</p>
+                <br>
+                <a href="/screens/15 - seleção magos.html"><p>Escolher este</p></a>
+            </div>
+        </div>
+        <div class="card3">
+            <div class="card-image3"></div>
+            <div class="card-text3">
+                <h2>Guerreiro</h2>
+                <br>
+                <p>O guerreiro pode dedicar sua vida a uma única arma até se tornar um mestre, ou pode treinar diferentes estilos para surpreender seu inimigo.</p>
+                <br>
+                <a href="/screens/16 - seleção guerreiros.html"><p>Escolher este</p></a>
+            </div>
+        </div>
+    </section>
+    </main>
+</body>
+</html>

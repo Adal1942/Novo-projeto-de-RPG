@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style-lobby.css">
+    <title>Lobby</title>
+    <script src="https://kit.fontawesome.com/fd1e79e837.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+        </style>
+</head>
+<body>
+    <header> 
+        <div id="title">
+            <a href="/screens/2 - inicio.html"><img class="infinito" src="/components/images/logo.png" alt="pngwing"></a>
+        </div>
+        <section>
+            <div class="list">
+             <div class="user">
+                <div class="imgBx">
+                    <img class="eu" src="/components/images/eu.jpg" alt="euzinho">
+                </div>   
+                <div class="details">
+                    <h3>Adal1942</h3>
+                    <p>Novato</p>
+                </div>
+            </div>
+            <div class="navigation">
+                <span><i class="fa-solid fa-user-pen"></i></span>
+                <span><i class="fa-solid fa-user-plus"></i></span>
+                <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+            </div>
+        </div>
+        <script>
+            let navigation = document.querySelector('.navigation');
+            navigation.onclick = function(){
+                navigation.classList.toggle('active')
+            }
+        </script>
+    </section>
+    </header>
+    <main>
+        <section class="talvez">
+            <div class="box">
+                <h3>Lista de amiguinhos</h3>
+                <div class="list">
+                    <div class="fotinho">
+                        <img src="/components/images/Vigia.png">
+                    </div>
+                    <div class="content">
+                        <h4>Vigia</h4>
+                        <p>Veterano</p>
+                    </div>
+                </div>
+                
+                <div class="list">
+                    <div class="fotinho">
+                        <img src="/components/images/Hiago.png">
+                    </div>
+                    <div class="content">
+                        <h4>Hiago</h4>
+                        <p>Veterano</p>
+                    </div>
+                </div>
+                
+                <div class="list">
+                    <div class="fotinho">
+                        <img src="/components/images/B+.png">
+                    </div>
+                    <div class="content">
+                        <h4>B+</h4>
+                        <p>Novato</p>
+                    </div>
+                </div>
+                
+                <div class="list">
+                    <div class="fotinho">
+                        <img src="/components/images/Renan.png">
+                    </div>
+                    <div class="content">
+                        <h4>Renan</h4>
+                        <p>Novato</p>
+                    </div>
+                </div>
+                
+                <div class="list">
+                    <div class="fotinho">
+                        <img src="/components/images/Soul.png">
+                    </div>
+                    <div class="content">
+                        <h4>Soul</h4>
+                        <p>Novato</p>
+                    </div>
+                </div>
+            </div>
+            <section class="parcial">
+                <div class="container">
+                    <a class="clique" href="/screens/3 - Novato-Veterano.html">
+                        <span>Novo jogo</span>
+                    </a>
+                    <a class="clique" href="#">
+                        <span>Continuar</span>
+                    </a>
+                    <a class="clique" href="#">
+                        <span>Perfil</span>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
